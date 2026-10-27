@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.log
+instance/
+.pytest_cache/
+test-results/
+artifacts/
+.browsers/
+gunicorn.ctl

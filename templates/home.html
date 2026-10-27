@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero wrap">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="dot"></span> ST. LOUIS, MISSOURI &amp; SURROUNDING COMMUNITIES</p>
+    {% if variant == 'b' %}
+    <h1>Your next floor.<br>A clearer<br><em>first step.</em></h1>
+    <p class="intro">Planning a commercial epoxy floor? Tell us what your space needs. We review your request and help you explore independent contractor options.</p>
+    {% else %}
+    <h1>A hard-working<br>floor starts with<br><em>the right match.</em></h1>
+    <p class="intro">Connect your commercial epoxy flooring project with independent contractors serving the St. Louis area. One request. A thoughtful starting point.</p>
+    {% endif %}
+    <a class="button" href="#quote">Tell us about your project <span class="arrow" aria-hidden="true"></span></a>
+    <p class="micro">Free to submit <span>·</span> No obligation <span>·</span> Reviewed by a person</p>
+    <div class="hero-note"><span class="note-icon" aria-hidden="true">+</span><p><strong>We make introductions. Contractors do the work.</strong><br>We review your inquiry before any contractor receives it.</p></div>
+  </div>
+  <div class="hero-art">
+    <div class="art-top"><span>BUILT AROUND YOUR SPACE</span><span class="arrow" aria-hidden="true"></span></div>
+    <svg viewBox="0 0 540 470" role="img" aria-label="Architectural illustration of a commercial floor, not a completed customer project">
+      <defs><linearGradient id="floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b2c8ba"/><stop offset="1" stop-color="#dce7de"/></linearGradient></defs>
+      <path d="M0 70 300 0 540 130V340L230 460 0 290Z" fill="#d5dfd3"/>
+      <path d="M0 70 300 0V205L0 290Z" fill="#e5e9dd"/>
+      <path d="M300 0 540 130V340L300 205Z" fill="#b7c6b6"/>
+      <path d="M0 290 300 205 540 340 230 460Z" fill="url(#floor)"/>
+      <path d="m0 327 300-85 240 135M0 365l300-86 240 134M96 318l230 143M186 291l235 142M279 264l236 140" fill="none" stroke="#8ba394" stroke-width="1" opacity=".6"/>
+      <path d="M50 86 126 67V211l-76 22Z" fill="#799687"/>
+      <path d="M59 93 117 78v125l-58 17Z" fill="#c1d9cb"/>
+      <path d="M159 58 264 32v155l-105 30Z" fill="#7e9989"/>
+      <path d="M168 66 255 45v133l-87 25Z" fill="#c8dbcd"/>
+      <path d="M181 168v-76m24 69V85m24 70V79M168 119l87-22" stroke="#7e9989" stroke-width="4"/>
+      <path d="M355 77 482 148v124l-127-73Z" fill="#839c89"/>
+      <path d="M368 97 470 155v96l-102-58Z" fill="#9bb29e"/>
+      <path d="m166 334 119-34 82 46-121 40Z" fill="#173f34" opacity=".14"/>
+      <path d="m187 308 79-23 65 37-81 24Z" fill="#244c3e"/>
+      <path d="M187 308v15l63 38v-15m0 0 81-24v15l-81 24" fill="#366550"/>
+      <path d="M300 0V205M0 290l300-85 240 135" fill="none" stroke="#90a590"/>
+    </svg>
+    <div class="art-bottom"><div><strong>Made for business.</strong><span>Warehouses · Retail · Commercial spaces</span></div><span class="art-badge" aria-hidden="true">STL<br>MO</span></div>
+    <p class="illustration-label">Concept illustration · Not a completed project</p>
+  </div>
+</section>
+<div class="sector-strip"><div class="wrap"><span>SPACE TO DO MORE</span><span>Warehouses</span><span>Retail &amp; showrooms</span><span>Commercial kitchens</span><span>Offices &amp; facilities</span></div></div>
+<section class="section wrap" id="how-it-works">
+  <div class="section-heading"><div><p class="eyebrow">LESS GUESSWORK. MORE DIRECTION.</p><h2>From project idea<br>to a useful introduction.</h2></div><p>No contractor directory to sort through. Start with your space, your timeline, and what matters to you.</p></div>
+  <div class="steps">
+    <article><span class="step">01 / TELL US</span><h3>Share the essentials.</h3><p>Your location, approximate floor area, and project goals help us understand what you need.</p></article>
+    <article><span class="step">02 / WE REVIEW</span><h3>A person checks the fit.</h3><p>We review your inquiry for coverage and project fit. Every request starts with our approval queue.</p></article>
+    <article><span class="step">03 / EXPLORE OPTIONS</span><h3>Connect when there’s a fit.</h3><p>If a suitable contractor is available, we can make an introduction with your permission. You decide who to hire.</p></article>
+  </div>
+</section>
+<section class="coverage" id="coverage"><div class="wrap coverage-grid">
+  <div><p class="eyebrow">ROOTED IN THE ST. LOUIS AREA</p><h2>Local projects.<br>A practical starting point.</h2><p>We accept commercial project inquiries in St. Louis City, St. Louis County, and selected St. Charles County communities. Availability depends on your ZIP code and contractor capacity.</p><div class="tags"><span>St. Louis</span><span>Chesterfield</span><span>Kirkwood</span><span>Fenton</span><span>St. Charles</span><span>O’Fallon</span></div></div>
+  <div class="coverage-card"><span class="eyebrow">WHY EPOXY?</span><h3>A surface with<br>a job to do.</h3><p>Epoxy systems can provide a seamless, easy-to-clean finish for demanding commercial spaces. The right system depends on the substrate, moisture, traffic, and safety needs.</p><p class="fine">A contractor should assess your site and explain preparation, slip resistance, downtime, and maintenance before you commit.</p></div>
+</div></section>
+<section class="section wrap quote-grid" id="quote">
+  <div class="quote-copy"><p class="eyebrow">YOUR PROJECT STARTS HERE</p><h2>Let’s find your<br>next step.</h2><p>Tell us a little about your commercial floor. We’ll review your request and contact you about potential options.</p><ul class="check-list"><li>No fee to submit a request</li><li>No obligation to hire anyone</li><li>Your inquiry is reviewed before sharing</li></ul><div class="honesty-note"><strong>A quick note on availability</strong><p>We’re building our contractor network. A match is not guaranteed, and requests stay with our operator until an approved contractor is available.</p></div></div>
+  <form class="quote-form" action="/quote" method="post">
+    <div class="form-heading"><h3>Request a contractor match</h3><p>All fields required except where marked optional.</p></div>
+    {% if errors %}<div class="error-summary" role="alert" tabindex="-1"><strong>Please check your information.</strong><ul>{% for key, message in errors.items() %}<li><a href="#{{ key }}">{{ message }}</a></li>{% endfor %}</ul></div>{% endif %}
+    <input type="hidden" name="csrf_token" value="{{ csrf() }}">
+    <input type="hidden" name="form_token" value="{{ form_token }}">
+    <div class="trap" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+    {% macro error(key) %}{% if errors.get(key) %}<span class="field-error" id="{{ key }}-error">{{ errors[key] }}</span>{% endif %}{% endmacro %}
+    <label for="project_type">Project type</label>
+    <select id="project_type" name="project_type" required {% if errors.get('project_type') %}aria-invalid="true" aria-describedby="project_type-error"{% endif %}><option value="">Select your space</option>{% for t in types %}<option {% if values.get('project_type') == t %}selected{% endif %}>{{ t }}</option>{% endfor %}</select>{{ error('project_type') }}
+    <div class="form-row"><div><label for="sqft">Approx. square footage</label><input id="sqft" name="sqft" type="number" min="1" max="1000000" step="1" placeholder="e.g. 2,500" value="{{ values.get('sqft','') }}" required {% if errors.get('sqft') %}aria-invalid="true" aria-describedby="sqft-error"{% endif %}>{{ error('sqft') }}</div>
+    <div><label for="zip">Project ZIP code</label><input id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code" placeholder="e.g. 63103" value="{{ values.get('zip','') }}" required {% if errors.get('zip') %}aria-invalid="true" aria-describedby="zip-error"{% endif %}>{{ error('zip') }}</div></div>
+    <label for="timeframe">Project timeframe</label><select id="timeframe" name="timeframe" required><option value="">When are you thinking?</option>{% for t in times %}<option {% if values.get('timeframe') == t %}selected{% endif %}>{{ t }}</option>{% endfor %}</select>{{ error('timeframe') }}
+    <label for="name">Your name</label><input id="name" name="name" autocomplete="name" minlength="2" maxlength="100" value="{{ values.get('name','') }}" required>{{ error('name') }}
+    <p class="contact-help" id="contact-help">Provide an email address, a phone number, or both.</p>
+    <div class="form-row"><div><label for="email">Email</label><input id="email" name="email" type="email" maxlength="254" autocomplete="email" aria-describedby="contact-help" value="{{ values.get('email','') }}">{{ error('email') }}</div><div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" maxlength="25" autocomplete="tel" aria-describedby="contact-help" value="{{ values.get('phone','') }}">{{ error('phone') }}</div></div>
+    <label for="details">Project details <span class="optional">(optional)</span></label><textarea id="details" name="details" rows="3" maxlength="3000" placeholder="Existing floor, how the space is used, or questions you have…">{{ values.get('details','') }}</textarea>{{ error('details') }}
+    <label class="consent" for="share_consent"><input type="checkbox" id="share_consent" name="share_consent" value="yes" required {% if values.get('share_consent') == 'yes' %}checked{% endif %}><span>{{ consent }} Read our <a href="/privacy">privacy policy</a>.</span></label>{{ error('share_consent') }}
+    <p class="fine">No automated marketing calls or texts are authorized by this form. Please don’t include payment, medical, or other sensitive information.</p>
+    <button class="button submit" type="submit">Request my match <span class="arrow" aria-hidden="true"></span></button><p class="form-foot">Your request is not a contract or a guaranteed quote.</p>
+  </form>
+</section>
+<section class="section wrap faq"><p class="eyebrow">GOOD QUESTIONS</p><h2>Know what happens next.</h2>
+<details><summary>Are you the company installing the floor?</summary><p>No. We operate this quote-matching website. Any flooring work is quoted, contracted, and performed by an independent contractor you choose.</p></details>
+<details><summary>Does submitting a request cost anything?</summary><p>No. There is no charge to submit a request and no obligation to hire. A contractor determines the price of any work. We may receive a fee from participating contractors for introductions; that does not guarantee a match.</p></details>
+<details><summary>Will my details be sent to contractors right away?</summary><p>No. Our operator reviews every request. We only share with independently operated commercial flooring contractors serving your area after approval and once an appropriate contractor agreement is in place.</p></details>
+<details><summary>Can you guarantee a price, schedule, or contractor?</summary><p>No. Site conditions and contractor availability vary. Confirm credentials, insurance, scope, pricing, and warranties directly before hiring.</p></details>
+</section>
+{% endblock %}

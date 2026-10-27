@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Commercial Epoxy Flooring Quotes in St. Louis | {{ site }}{% endblock %}</title>
+  <meta name="description" content="Tell us about your commercial flooring project in St. Louis, Missouri. Our independent quote-matching service reviews your request and helps you explore contractor options.">
+  <meta name="csrf-token" content="{{ csrf() }}">
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='mark.svg') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='site.js') }}"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="disclosure">INDEPENDENT QUOTE-MATCHING SERVICE <span>•</span> NOT A FLOORING CONTRACTOR</div>
+<header class="header wrap">
+  <a class="brand" href="/"><img src="/static/mark.svg" alt="" width="34" height="34"><span>STL <strong>Floor Match</strong><small>COMMERCIAL FLOORING CONNECTIONS</small></span></a>
+  <nav aria-label="Main navigation"><a href="/#how-it-works">How it works</a><a href="/#coverage">Service area</a><a class="button small" href="/#quote">Request a match <span class="arrow" aria-hidden="true"></span></a></nav>
+</header>
+{% with messages = get_flashed_messages() %}{% for message in messages %}<p class="notice wrap" role="status">{{ message }}</p>{% endfor %}{% endwith %}
+<main id="main">{% block content %}{% endblock %}</main>
+<footer class="footer wrap">
+  <div><a class="brand" href="/">STL <strong>Floor Match</strong></a><p>Local projects. Independent contractors. A clearer place to start.</p></div>
+  <div><a href="/privacy">Privacy &amp; your information</a><p>St. Louis, Missouri area · © 2026</p></div>
+  <p class="fine">We are an independent lead-matching service, not a contractor. Contractor availability, pricing, licenses, insurance, warranties, and work quality must be confirmed directly with the contractor. Submitting a request does not guarantee a match or a quote.</p>
+</footer>
+</body>
+</html>

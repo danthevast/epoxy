@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}Private dashboard sign-in | {{ site }}{% endblock %}
+{% block content %}<section class="wrap narrow section"><p class="eyebrow">OPERATOR ACCESS ONLY</p><h1>Private dashboard</h1><form method="post" class="panel"><input type="hidden" name="csrf_token" value="{{ csrf() }}"><label for="password">Admin password</label><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="256"><button class="button" type="submit">Sign in →</button><p class="fine">Use the password you set with the local setup tool. There is no public registration.</p></form></section>{% endblock %}
